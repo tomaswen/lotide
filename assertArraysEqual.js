@@ -12,9 +12,9 @@ const eqArrays = function(arr1,arr2) {
 
 const assertArraysEqual = function(arr1, arr2){
   if (eqArrays(arr1,arr2) === true){
-    console.log ('Your arrays match')
+    console.log ('✅Your arrays match')
   }
   else {
-    console.log ('Your arrays does not match')
+    console.log ('❌Your arrays does not match')
   }
 };
