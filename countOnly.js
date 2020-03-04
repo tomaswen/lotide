@@ -1,4 +1,3 @@
-// FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅Assertion Passed: ${actual} === ${expected}`);
@@ -8,24 +7,20 @@ const assertEqual = function(actual, expected) {
 };
 
 const countOnly = function(allItems, itemsToCount) {
-  let result =  {};
-  let arr = Object.keys(itemsToCount);
-  for (const names of arr) {
-    let count = 0;
-    for (const items of allItems) {
-      if (items === names) {
-        count += 1;
-      }
-      result[names] = count;
-      //delete the key if the value of it is 0
-      if (result[names] === 0) {
-        delete result[names];
+  const results = {};
+  for (const item of allItems) {
+    if (itemsToCount[item]) {
+      if (results[item]) {
+        results[item] += 1;
+      } 
+      else {
+        results[item] = 0;
       }
     }
   }
-  
-  return result;
+  return results;
 };
+
 const firstNames = [
   "Karl",
   "Salima",
@@ -35,8 +30,7 @@ const firstNames = [
   "Jason",
   "Salima",
   "Fang",
-  "Joe",
-  
+  "Joe"
 ];
 
 const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true });
@@ -44,5 +38,3 @@ const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": t
 assertEqual(result1["Jason"], 1);
 assertEqual(result1["Karima"], undefined);
 assertEqual(result1["Fang"], 2);
-
-
