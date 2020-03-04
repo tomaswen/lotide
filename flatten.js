@@ -33,4 +33,4 @@ const flatten = function(a) {
   return b;
 };
 
-assertArraysEqual(flatten([1,2,3,[4,5,6],7,8,[9]]),[1,2,3,4,5,6,7,8,9])
+assertArraysEqual(flatten([1,2,3,[4,5,6],7,8,[9]]),[1,2,3,4,5,6,7,8,9]);

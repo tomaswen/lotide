@@ -1,10 +1,10 @@
 const letterPositions = function(sentence) {
   const results = {};
-  for (let char of sentence){
+  for (let char of sentence) {
     results[char] = [];
-    for (let charIndex in sentence){
-      if (sentence[charIndex] === char){
-        results[char].push(charIndex)
+    for (let charIndex in sentence) {
+      if (sentence[charIndex] === char) {
+        results[char].push(charIndex);
       }
     }
   }
@@ -13,4 +13,4 @@ const letterPositions = function(sentence) {
 };
 
 let input = process.argv.splice(2).join(' ');
-console.log(letterPositions(input))
+console.log(letterPositions(input));

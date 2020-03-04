@@ -10,20 +10,19 @@ const eqArrays = function(arr1,arr2) {
   return true;
 };
 
-const assertArraysEqual = function(arr1, arr2){
-  if (eqArrays(arr1,arr2) === true){
-    console.log ('✅Your arrays match')
-  }
-  else {
-    console.log ('❌Your arrays does not match')
+const assertArraysEqual = function(arr1, arr2) {
+  if (eqArrays(arr1,arr2) === true) {
+    console.log('✅Your arrays match');
+  } else {
+    console.log('❌Your arrays does not match');
   }
 };
 
 const without = function(original, toRemove) {
   let result = original;
   let arr = toRemove;
-  for (let i = 0; i < arr.length; i++) {
-    let wordToRemove = arr[i];
+  for (let remove of arr) {
+    let wordToRemove = remove;
     for (let j = result.length - 1; j >= 0; j--) {
       if (result[j] === wordToRemove) {
         result.splice(j,1);

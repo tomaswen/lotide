@@ -10,11 +10,10 @@ const eqArrays = function(arr1,arr2) {
   return true;
 };
 
-const assertArraysEqual = function(arr1, arr2){
-  if (eqArrays(arr1,arr2) === true){
-    console.log ('✅Your arrays match')
-  }
-  else {
-    console.log ('❌Your arrays does not match')
+const assertArraysEqual = function(arr1, arr2) {
+  if (eqArrays(arr1,arr2) === true) {
+    console.log('✅Your arrays match');
+  } else {
+    console.log('❌Your arrays does not match');
   }
 };
