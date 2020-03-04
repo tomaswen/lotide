@@ -6,35 +6,26 @@ const assertEqual = function(actual, expected) {
     console.log(`❌Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-const count = function(arr1,name){
-  let count = 0;
-  for (let i = 0; i < arr1.length; i++){
-    if (arr1[i] === name){
-      count += 1;
-    }
-  }
-  return count;
-}
 
 const countOnly = function(allItems, itemsToCount) {
   let result =  {};
-  arr = Object.keys(itemsToCount)
+  let arr = Object.keys(itemsToCount);
   for (const names of arr) {
     let count = 0;
     for (const items of allItems) {
-      if ( items === names){
+      if (items === names) {
         count += 1;
       }
-      result[`${names}`] = count;
+      result[names] = count;
       //delete the key if the value of it is 0
-      if (result[`${names}`] === 0 ){
-        delete result[`${names}`];
+      if (result[names] === 0) {
+        delete result[names];
       }
     }
   }
   
-  return result
-}
+  return result;
+};
 const firstNames = [
   "Karl",
   "Salima",
