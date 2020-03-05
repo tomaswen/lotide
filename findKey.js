@@ -13,7 +13,7 @@ let answer = findKey({
   "Ora":       { stars: 2 },
   "Akaleri":   { stars: 3 },
   "Akelarre":  { stars: 3 }
-}, x => x.stars === 2); // 
+}, x => x.stars === 2);
 let answer1 = findKey({
   "Blue Hill": { stars: 1 },
   "noma":      { stars: 2 },
@@ -21,7 +21,7 @@ let answer1 = findKey({
   "Ora":       { stars: 2 },
   "Akaleri":   { stars: 3 },
   "Akelarre":  { stars: 3 }
-}, x => x.stars === 3); // 
+}, x => x.stars === 3);
 let answer2 = findKey({
   "Blue Hill": { stars: 1 },
   "noma":      { stars: 2 },
@@ -29,7 +29,7 @@ let answer2 = findKey({
   "Ora":       { stars: 2 },
   "Akaleri":   { stars: 3 },
   "Akelarre":  { stars: 3 }
-}, x => x.stars === 5); //
+}, x => x.stars === 5);
 //testing
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
