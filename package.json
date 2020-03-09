@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@tomas.wen/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Lighthouse Labs project inspired by the Lodash Project",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/tomaswen/lotide.git"
   },
-  "author": "",
+  "author": "Tomas Wen Liang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tomaswen/lotide/issues"

@@ -12,5 +12,4 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-let input = process.argv.splice(2).join(' ');
-console.log(letterPositions(input));
+module.exports = letterPositions;
